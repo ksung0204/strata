@@ -89,6 +89,7 @@ export default function Building() {
 
     <div className="mb-8">
      <h2 className="text-xl text-black font-semibold mb-4">Add New Building</h2>
+     {/* form để nhập dữ liệu, tạo request body cho post request */}
      <form onSubmit={handleSubmit} className="space-y-4 text-black">
       <div>
        <label htmlFor="buildingName" className="block text-sm font-medium text-gray-700 mb-1">
@@ -186,6 +187,7 @@ export default function Building() {
         <tr>
          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Building Name</td>
          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{buildingData.buildingName}</td>
+         {/* building data là cái data trong response của get request */}
         </tr>
         <tr>
          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Address</td>
@@ -211,6 +213,3 @@ export default function Building() {
   </div>
  );
 }
-//xài input với type là kiểu dữ liệu, name là cái tên biến giống như là floor bằng số ...
-//form có label( biết ngta nhập cgi) và input
-//  
