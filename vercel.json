@@ -12,13 +12,14 @@
         "dest": "/api/$1.js"
       }
     ],
-    //"regions": ["syd1"],
+    "regions": ["syd1"],
     "buildCommand": "npm run build",
     "crons": [
       {
         "path": "/api/refresh",
         "schedule": "0 0 * * *"
       }
-    ]
+    ],
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   }
-  
+
