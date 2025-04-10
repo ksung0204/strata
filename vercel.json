@@ -1,34 +1,8 @@
 {
-    "version": 2,
-    "rewrites": [
+  "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/"
     }
-    ],
-    "builds": [
-      {
-        "src": "next.config.js",
-        "use": "@vercel/next"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/api/$1.js"
-      }
-    ],
-    "regions": ["syd1"],
-    "crons": [
-      {
-        "path": "/api/refresh",
-        "schedule": "0 0 * * *"
-      }
-    ],
-    "framework": "nextjs",
-    "buildCommand": "next build",
-    "outputDirectory": "build",
-    "installCommand": "npm install",
-    "devCommand": "next dev"
-  }
-
+  ]
+}
