@@ -1,8 +1,16 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
-}
+  "version": 2,
+  "framework": "nextjs",
+  "buildCommand": "CI='' npm run build",
+  "installCommand": "npm install",
+  "devCommand": "next",
+  "regions": ["syd1"],
+  "crons": [
+   {
+    "path": "/api/building/route",
+    "schedule": "0 0 * * *"
+   }
+  ],
+  "cleanUrls": true
+ }
+ 
