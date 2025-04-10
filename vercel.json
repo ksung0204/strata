@@ -12,7 +12,7 @@
         "dest": "/api/$1.js"
       }
     ],
-    "regions": ["syd1"],
+    //"regions": ["syd1"],
     "buildCommand": "npm run build",
     "crons": [
       {
