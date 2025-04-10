@@ -19,7 +19,6 @@
         "path": "/api/refresh",
         "schedule": "0 0 * * *"
       }
-    ],
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    ]
   }
 
